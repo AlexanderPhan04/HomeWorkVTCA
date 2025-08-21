@@ -32,7 +32,7 @@ Các bài tập được sắp xếp theo buổi học và chủ đề, từ cơ
 
 ## 🤝 Đóng góp
 
-Mọi đóng góp vui lòng gửi **pull request** hoặc liên hệ qua email: **alexanderphan04@gmail.com**
+Mọi đóng góp vui lòng gửi **pull request** hoặc liên hệ qua email: **quannnd2004@gmail.com**
 
 ---
 
