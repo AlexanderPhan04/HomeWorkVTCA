@@ -4,7 +4,6 @@
 #include <limits>
 using namespace std;
 
-
 void displayMenu()
 {
     cout << "--------------------------------------" << endl;
@@ -23,7 +22,7 @@ void displayMenu()
     cout << "Enter your choice: ";
 }
 
-void displayArray(const vector<int>& arr)
+void displayArray(const vector<int> &arr)
 {
     if (arr.empty())
     {
@@ -38,17 +37,77 @@ void displayArray(const vector<int>& arr)
     cout << endl;
 }
 
-void getIntegerInput()
+int getIntegerInput()
 {
     int value;
     while (!(cin >> value))
     {
-        
+        cout << "Invalid input. Please enter an integer: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
-    
+    return value;
 }
 
 int main()
 {
+    vector<int> numbers;
+    int choice;
 
+    do
+    {
+        displayMenu();
+        choice = getIntegerInput();
+
+        switch (choice)
+        case 1:
+        {
+            cout << "Enter an integer to add to the array: ";
+            int value = getIntegerInput();
+            numbers.push_back(value);
+            cout << "Element added." << endl;
+            break;
+        }
+        case 2:
+        {
+            if (numbers.empty())
+            {
+                cout << "Array is empty. Cannot correct any element." << endl;
+                break;
+            }
+            cout << "Enter the position to correct (0 to " << numbers.size() - 1 << "):  ";
+            int index = getIntegerInput();
+            if (index >= 0 && index < numbers.size())
+            {
+                cout << "Enter the new value: ";
+                int newValue = getIntegerInput();
+                numbers[index] = newValue;
+                cout << "Element corrected." << endl;
+            }
+            else
+            {
+                cout << "Invalid position." << endl;
+            }
+            break;
+        }
+        case 3:
+        {
+            if (numbers.empty())
+            {
+                cout << "Array is empty. Cannot remove any element." << endl;
+                break;
+            }
+            cout << "Enter the position to remove (0 to " << numbers.size() - 1 << "): ";
+            int index = getIntegerInput();
+            if (index >= 0 && index < numbers.size())
+            {
+                /* code */
+            }
+            
+            
+        }
+
+    } while (choice != 0);
+
+    return 0;
 }
