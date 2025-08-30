@@ -101,9 +101,27 @@ int main()
             int index = getIntegerInput();
             if (index >= 0 && index < numbers.size())
             {
-                /* code */
+                numbers.erase(numbers.begin() + index);
+                cout << "Element removed." << endl;
             }
-            
+            else
+            {
+                cout << "Invalid position." << endl;
+            }
+            break;
+        }
+        case 4:
+        {
+            cout << "Enter the element to search for: ";
+            int value = getIntegerInput();
+            bool found = false;
+            for (size_t i = 0; i < numbers.size(); i++)
+            {
+                if (numbers[i] == value)
+                {
+                    cout << "No value found at position: " << value << " trong mảng" endl;
+                }
+            }
             
         }
 
