@@ -1,0 +1,22 @@
+body
+{
+    font-family: Tahoma;
+    background-color: #f0f0f0;
+}
+div
+{
+    border: 1px solid black;
+    margin: 10px;
+}
+.header, .footer
+{
+    background-color: dodgerblue;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+.content
+{
+    padding: 50px 15px;
+    background-color: white;
+}

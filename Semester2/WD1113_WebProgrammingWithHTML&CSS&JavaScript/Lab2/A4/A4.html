@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing CSS Style Sheet</title>
+    <style>
+        body
+        {
+            font-family: sans-serif;
+        }
+        #header #content #footer
+        {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .new
+        {
+            color: blue;
+            text-decoration: underline;
+        }
+        .highlight
+        {
+            background-color: yellow;
+        }
+        .new.highlight
+        {
+            background-color: yellow;
+            color: blue;
+            text-decoration: underline;
+        }
+        #footer
+        {
+            text-align: right;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Test CSS Style Sheet</h1>
+    </div>
+    <div id="content">
+      <h2>This Heading level 2</h2>
+      <p>
+        This sampe HTMl page about <span class="new">CSS style sheet</span>. You can use
+        <span class="highlight">id, class selectors, and font, color properties</span>. It is
+        <span class="new highlight">very important skill</span> in web design.
+      </p>
+    </div>
+    <div id="footer">
+        <p>This page is created with <span class="new">HTML5/CSS3</span></p>
+    </div>
+  </body>
+</html>
