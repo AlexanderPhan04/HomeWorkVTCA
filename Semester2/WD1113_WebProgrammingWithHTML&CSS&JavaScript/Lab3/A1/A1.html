@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a
+        {
+            color: blue;
+            text-decoration: underline;
+        }
+        .image-list
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .image-list li
+        {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+        .image-list li::before
+        {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 15px;
+            height: 15px;
+            background-image: url("/Semester2/WD1113_WebProgrammingWithHTML&CSS&JavaScript/Lab3/A1/Screenshot\ 2025-09-08\ 100251.png");
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Default list</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a>s</li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>CSS Image Item Marker List</h2>
+        <ul class="image-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
