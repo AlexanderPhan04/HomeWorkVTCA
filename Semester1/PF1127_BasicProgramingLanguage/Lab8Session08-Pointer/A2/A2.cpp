@@ -3,19 +3,22 @@ using namespace std;
 
 int main()
 {
-    const int SIZE = 5;
-    int arr[SIZE];
+    int arr[5];
     int *ptr = arr;
 
-    cout << "Enter " << SIZE << " integers:" << endl;
-    for (int i = 0; i < SIZE; i++)
+    cout << "Enter five integers: ";
+    for (int i = 0; i < 5; i++)
     {
-        cout << "arr[" << i << "] = ";
+        cout << "Arr[" << i << "] = ";
         cin >> *(ptr + i);
     }
 
-    cout << "You entered:" ;
+    cout << "You entered: ";
+    for (int i = 0; i < 5; i++)
+    {
+        cout << *(arr + i) << " ";
+    }
     
-
+    cout << endl;
     return 0;
 }
