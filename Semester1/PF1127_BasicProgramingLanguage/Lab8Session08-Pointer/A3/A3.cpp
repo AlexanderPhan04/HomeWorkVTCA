@@ -23,6 +23,26 @@ int main()
         *(c + i) = *(a + i) + *(b + i);
     }
     
+    cout << "Array a: ";
+    for (int i = 0; i < SIZE; i++)
+    {
+        cout << *(a + i) << " ";
+    }
+    cout << endl;
 
-    return 0
+    cout << "Array b: ";
+    for (int i = 0; i < SIZE; i++)
+    {
+        cout << *(b + i) << " ";
+    }
+    cout << endl;
+    
+    cout << "Array c (a + b): ";
+    for (int i = 0; i < SIZE; i++)
+    {
+        cout << *(c + i) << " ";
+    }
+    cout << endl;
+    
+    return 0;
 }
